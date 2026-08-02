@@ -55,7 +55,7 @@ if prompt := st.chat_input("Type your question here..."):
 
     # Generate Response
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": system_prompt},
             *st.session_state.messages
